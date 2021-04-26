@@ -135,20 +135,6 @@ module.exports = ($, gulp, config) => {
           exclude: /vendors\//
         }
       },
-      'coffeescript': {
-        process: $.path.join(__dirname, 'tasks', 'coffeescript'),
-        base: $.path.join(__dirname, 'bases', 'compile'),
-        pattern: $.path.join('**', '*.coffee')
-      },
-      'coffeescript-lint': {
-        process: $.path.join(__dirname, 'tasks', 'coffeescript-lint'),
-        base: $.path.join(__dirname, 'bases', 'lint'),
-        pattern: $.path.join('**', '*.coffee'),
-        options: {
-          rules: require($.path.join(__dirname, 'config', 'coffeelint.json')),
-          exclude: /vendors\//
-        }
-      },
       'typescript': {
         process: $.path.join(__dirname, 'tasks', 'typescript'),
         base: $.path.join(__dirname, 'bases', 'compile'),
