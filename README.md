@@ -33,8 +33,6 @@ gulp stylus
 gulp stylus-lint
 gulp javascript
 gulp javascript-lint
-gulp coffeescript
-gulp coffeescript-lint
 gulp typescript
 gulp typescript-lint
 gulp fonts
@@ -85,12 +83,6 @@ Compiles and autoprefixes `.styl` files and outputs them to the build folder, th
 __gulp javascript__
 
 Compiles ES6 `.js` files and outputs them to the build folder, then minifies them and outputs them in dist. The `javascript` task can use either `webpack` or `browserify` to process and bundle the files, specified using the `options.bundler` parameter (as seen in the configuration example below).
-
-<sub>This task makes use of the `partials graph`, meaning that any changes on a partial will trigger a rebuild on the parent files.</sub>
-
-__gulp coffeescript__
-
-Compiles `.coffee` files and outputs them to the build folder, then minifies them and outputs them in dist. Just like in the `javascript` task, you can use either `webpack` or `browserify` to bundle the files.
 
 <sub>This task makes use of the `partials graph`, meaning that any changes on a partial will trigger a rebuild on the parent files.</sub>
 
